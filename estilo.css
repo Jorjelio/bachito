@@ -1,0 +1,169 @@
+/* Estilos Básicos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #701a75;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a {
+    color: #475569;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+/* Presentación (Hero) */
+.hero {
+    background: #fdf4ff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.hero h1 span {
+    color: #701a75;
+    display: block;
+}
+
+.hero p {
+    color: #64748b;
+    margin: 10px 0 20px;
+}
+
+.boton-emergencia {
+    display: inline-block;
+    background: #e11d48;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Bloque de Contenido (Columnas) */
+.contenido-principal {
+    display: flex;
+    gap: 30px;
+}
+
+main {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 5px solid #701a75;
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+aside li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+aside a {
+    color: #475569;
+    text-decoration: none;
+}
+
+/* Formulario */
+.ayuda {
+    background: #701a75;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ayuda form {
+    margin-top: 15px;
+}
+
+.ayuda input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.ayuda input[type="submit"] {
+    background: white;
+    color: #701a75;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Adaptación para Celulares */
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+    header .contenedor {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
